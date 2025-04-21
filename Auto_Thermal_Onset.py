@@ -6,6 +6,9 @@ from scipy.signal import savgol_filter, find_peaks
 
 # Укажите путь к вашему CSV файлу
 file_path = r'C:\Users\UserName\Desktop\raw_data\In_6.2_10_2 нагрева.csv'
+# Укажите полученные температуры плавления металлов-стандартов T_measured, относительно соответсвующих эталонных T_ref
+T_measured = np.array([156.83, 230.5, 267.76, 412.07, 651.6, 964.53, 1071.31])
+T_ref = np.array([156.7, 232.05, 271.4, 419.56, 660.0, 961.8, 1064.2])
 
 # Проверка существования файла
 if os.path.exists(file_path):
@@ -30,8 +33,7 @@ if os.path.exists(file_path):
         print(f"\nОставшиеся данные сохранены в файл: {output_file_path}")
 
         # Построение графика с полиномиальной линией тренда
-        T_measured = np.array([156.83, 230.5, 267.76, 412.07, 651.6, 964.53, 1071.31])
-        T_ref = np.array([156.7, 232.05, 271.4, 419.56, 660.0, 961.8, 1064.2])
+
         Difference = T_measured - T_ref
 
         plt.figure(figsize=(10, 6))
