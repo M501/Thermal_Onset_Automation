@@ -1,5 +1,7 @@
 # Thermal_Onset_Auto_En
 
+This is a one if the first alpha version of this software. Basically what it starts from and the only version I can post legally.
+
 Automation of raw thermogravimetric data processing from .csv files and collected melting temperatures of metal standards obtained from laboratory thermal analyzers (specifically Chinese models with inconvenient/missing software). The script automatically extracts required data for calculations, manages folder paths defined in code, performs filtering, smoothing, identifies DTA peaks and temperature onset points, and generates clear visualizations.
 
 ## Key Features
@@ -49,6 +51,8 @@ T_ref = np.array([156.7, 232.05, 271.4, 419.56, 660.0, 961.8, 1064.2])
 
 
 # Thermal_Onset_Auto
+
+Это одна из самых ранних альфа версий, с чего вся разработка и начиналась. Эта версия, которую я могу легально опубликовать.
 
 Автоматизация обработки сырых данных термоанализа из .csv-файлов и собранных температур плавления металлов-стандартов, полученных с лабораторных термоанализаторов (в частности китайских моделей с неудобным, отсутствующим ПО). Скрипт автоматически извлекает необходимые данные для расчетов, манипулирует указанными в коде папками, выполняет фильтрацию, сглаживание, определяет пик и температурный онсет, а также строит наглядные графики.
 
